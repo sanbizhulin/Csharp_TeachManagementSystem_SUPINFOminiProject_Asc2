@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Course">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Course_name" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Notation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="score" Type="int" />
+  </EntityType>
+  <EntityType Name="Questions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Q" Type="nchar" MaxLength="20" />
+    <Property Name="A" Type="nchar" MaxLength="20" />
+    <Property Name="Question_type" Type="nchar" MaxLength="10" />
+    <Property Name="subject" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Teacher">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nchar" MaxLength="20" />
+    <Property Name="Firstname" Type="nchar" MaxLength="20" />
+    <Property Name="Promotion_during_validation" Type="nchar" MaxLength="20" />
+    <Property Name="Current_Promotion" Type="nchar" MaxLength="20" />
+    <Property Name="E-mail" Type="nchar" MaxLength="20" />
+    <Property Name="Campus" Type="nchar" MaxLength="20" />
+    <Property Name="Courses_would_teach" Type="nchar" MaxLength="20" />
+    <Property Name="Courses_already_teach" Type="nchar" MaxLength="20" />
+    <Property Name="Campus_already_in" Type="nchar" MaxLength="20" />
+    <Property Name="Campus_would_in" Type="nchar" MaxLength="20" />
+    <Property Name="Certifications" Type="nchar" MaxLength="50" />
+    <Property Name="comments" Type="nchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="Course" EntityType="Self.Course" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Notation" EntityType="Self.Notation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Questions" EntityType="Self.Questions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Teacher" EntityType="Self.Teacher" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,15 @@
+E:\法方课\C#miniproject\CsharpV1\CsharpV1\bin\Debug\CsharpV1.exe.config
+E:\法方课\C#miniproject\CsharpV1\CsharpV1\obj\Debug\CsharpV1.csprojResolveAssemblyReference.cache
+E:\法方课\C#miniproject\CsharpV1\CsharpV1\bin\Debug\C#v1.mdf
+E:\法方课\C#miniproject\CsharpV1\CsharpV1\bin\Debug\C#v1_log.ldf
+E:\法方课\C#miniproject\CsharpV1\CsharpV1\bin\Debug\CsharpV1.exe
+E:\法方课\C#miniproject\CsharpV1\CsharpV1\bin\Debug\CsharpV1.pdb
+E:\法方课\C#miniproject\CsharpV1\CsharpV1\bin\Debug\EntityFramework.dll
+E:\法方课\C#miniproject\CsharpV1\CsharpV1\bin\Debug\EntityFramework.SqlServer.dll
+E:\法方课\C#miniproject\CsharpV1\CsharpV1\bin\Debug\EntityFramework.xml
+E:\法方课\C#miniproject\CsharpV1\CsharpV1\bin\Debug\EntityFramework.SqlServer.xml
+E:\法方课\C#miniproject\CsharpV1\CsharpV1\obj\Debug\CsharpV1.exe
+E:\法方课\C#miniproject\CsharpV1\CsharpV1\obj\Debug\CsharpV1.pdb
+E:\法方课\C#miniproject\[MP12NET] 167312 - ZHOU Yi-HEBUT\CsharpV1\bin\Debug\CsharpV1.exe.config
+E:\法方课\C#miniproject\[MP12NET] 167312 - ZHOU Yi-HEBUT\CsharpV1\obj\Debug\CsharpV1.exe
+E:\法方课\C#miniproject\[MP12NET] 167312 - ZHOU Yi-HEBUT\CsharpV1\obj\Debug\CsharpV1.pdb

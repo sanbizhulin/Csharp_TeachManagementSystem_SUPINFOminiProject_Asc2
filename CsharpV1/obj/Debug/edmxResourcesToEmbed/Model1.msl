@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="ZHOUYIEntities">
+    <EntitySetMapping Name="Teacher">
+      <EntityTypeMapping TypeName="Model.Teacher">
+        <MappingFragment StoreEntitySet="Teacher">
+          <ScalarProperty Name="comments" ColumnName="comments" />
+          <ScalarProperty Name="Certifications" ColumnName="Certifications" />
+          <ScalarProperty Name="Campus_would_in" ColumnName="Campus_would_in" />
+          <ScalarProperty Name="Campus_already_in" ColumnName="Campus_already_in" />
+          <ScalarProperty Name="Courses_already_teach" ColumnName="Courses_already_teach" />
+          <ScalarProperty Name="Courses_would_teach" ColumnName="Courses_would_teach" />
+          <ScalarProperty Name="Campus" ColumnName="Campus" />
+          <ScalarProperty Name="E_mail" ColumnName="E-mail" />
+          <ScalarProperty Name="Current_Promotion" ColumnName="Current_Promotion" />
+          <ScalarProperty Name="Promotion_during_validation" ColumnName="Promotion_during_validation" />
+          <ScalarProperty Name="Firstname" ColumnName="Firstname" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Questions">
+      <EntityTypeMapping TypeName="Model.Questions">
+        <MappingFragment StoreEntitySet="Questions">
+          <ScalarProperty Name="subject" ColumnName="subject" />
+          <ScalarProperty Name="Question_type" ColumnName="Question_type" />
+          <ScalarProperty Name="A" ColumnName="A" />
+          <ScalarProperty Name="Q" ColumnName="Q" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Course">
+      <EntityTypeMapping TypeName="Model.Course">
+        <MappingFragment StoreEntitySet="Course">
+          <ScalarProperty Name="Course_name" ColumnName="Course_name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Notation">
+      <EntityTypeMapping TypeName="Model.Notation">
+        <MappingFragment StoreEntitySet="Notation">
+          <ScalarProperty Name="score" ColumnName="score" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

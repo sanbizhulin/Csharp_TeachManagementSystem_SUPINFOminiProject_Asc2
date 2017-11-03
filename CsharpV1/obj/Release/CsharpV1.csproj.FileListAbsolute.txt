@@ -1,0 +1,12 @@
+E:\法方课\C#miniproject\[MP12NET] 167312 - ZHOU Yi-HEBUT\CsharpV1\bin\Release\CsharpV1.exe.config
+E:\法方课\C#miniproject\[MP12NET] 167312 - ZHOU Yi-HEBUT\CsharpV1\bin\Release\C#v1.mdf
+E:\法方课\C#miniproject\[MP12NET] 167312 - ZHOU Yi-HEBUT\CsharpV1\bin\Release\C#v1_log.ldf
+E:\法方课\C#miniproject\[MP12NET] 167312 - ZHOU Yi-HEBUT\CsharpV1\bin\Release\CsharpV1.exe
+E:\法方课\C#miniproject\[MP12NET] 167312 - ZHOU Yi-HEBUT\CsharpV1\bin\Release\CsharpV1.pdb
+E:\法方课\C#miniproject\[MP12NET] 167312 - ZHOU Yi-HEBUT\CsharpV1\bin\Release\EntityFramework.dll
+E:\法方课\C#miniproject\[MP12NET] 167312 - ZHOU Yi-HEBUT\CsharpV1\bin\Release\EntityFramework.SqlServer.dll
+E:\法方课\C#miniproject\[MP12NET] 167312 - ZHOU Yi-HEBUT\CsharpV1\bin\Release\EntityFramework.xml
+E:\法方课\C#miniproject\[MP12NET] 167312 - ZHOU Yi-HEBUT\CsharpV1\bin\Release\EntityFramework.SqlServer.xml
+E:\法方课\C#miniproject\[MP12NET] 167312 - ZHOU Yi-HEBUT\CsharpV1\obj\Release\CsharpV1.csprojResolveAssemblyReference.cache
+E:\法方课\C#miniproject\[MP12NET] 167312 - ZHOU Yi-HEBUT\CsharpV1\obj\Release\CsharpV1.exe
+E:\法方课\C#miniproject\[MP12NET] 167312 - ZHOU Yi-HEBUT\CsharpV1\obj\Release\CsharpV1.pdb

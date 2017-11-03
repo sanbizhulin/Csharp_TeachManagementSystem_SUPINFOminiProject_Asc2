@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="ZHOUYIEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Teacher" EntityType="Model.Teacher" />
+    <EntitySet Name="Questions" EntityType="Model.Questions" />
+    <EntitySet Name="Course" EntityType="Model.Course" />
+    <EntitySet Name="Notation" EntityType="Model.Notation" />
+  </EntityContainer>
+  <EntityType Name="Teacher">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="Firstname" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="Promotion_during_validation" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="Current_Promotion" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="E_mail" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="Campus" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="Courses_would_teach" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="Courses_already_teach" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="Campus_already_in" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="Campus_would_in" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="Certifications" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="comments" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Questions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Q" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="A" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="Question_type" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="subject" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Course">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Course_name" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Notation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="score" Type="Int32" />
+  </EntityType>
+</Schema>

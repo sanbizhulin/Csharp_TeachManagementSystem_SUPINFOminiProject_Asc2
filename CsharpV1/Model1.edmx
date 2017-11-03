@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Course">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Course_name" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="Notation">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="score" Type="int" />
+        </EntityType>
+        <EntityType Name="Questions">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Q" Type="nchar" MaxLength="20" />
+          <Property Name="A" Type="nchar" MaxLength="20" />
+          <Property Name="Question_type" Type="nchar" MaxLength="10" />
+          <Property Name="subject" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="Teacher">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nchar" MaxLength="20" />
+          <Property Name="Firstname" Type="nchar" MaxLength="20" />
+          <Property Name="Promotion_during_validation" Type="nchar" MaxLength="20" />
+          <Property Name="Current_Promotion" Type="nchar" MaxLength="20" />
+          <Property Name="E-mail" Type="nchar" MaxLength="20" />
+          <Property Name="Campus" Type="nchar" MaxLength="20" />
+          <Property Name="Courses_would_teach" Type="nchar" MaxLength="20" />
+          <Property Name="Courses_already_teach" Type="nchar" MaxLength="20" />
+          <Property Name="Campus_already_in" Type="nchar" MaxLength="20" />
+          <Property Name="Campus_would_in" Type="nchar" MaxLength="20" />
+          <Property Name="Certifications" Type="nchar" MaxLength="50" />
+          <Property Name="comments" Type="nchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="ModelStoreContainer">
+          <EntitySet Name="Course" EntityType="Self.Course" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Notation" EntityType="Self.Notation" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Questions" EntityType="Self.Questions" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Teacher" EntityType="Self.Teacher" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="ZHOUYIEntities" annotation:LazyLoadingEnabled="true" >
+          <EntitySet Name="Teacher" EntityType="Model.Teacher" />
+          <EntitySet Name="Questions" EntityType="Model.Questions" />
+          <EntitySet Name="Course" EntityType="Model.Course" />
+          <EntitySet Name="Notation" EntityType="Model.Notation" />
+        </EntityContainer>
+        <EntityType Name="Teacher">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="Firstname" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="Promotion_during_validation" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="Current_Promotion" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="E_mail" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="Campus" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="Courses_would_teach" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="Courses_already_teach" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="Campus_already_in" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="Campus_would_in" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="Certifications" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+          <Property Name="comments" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Questions">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Q" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="A" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="Question_type" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="subject" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Course">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Course_name" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Notation">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="score" Type="Int32" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="ZHOUYIEntities" >
+          <EntitySetMapping Name="Teacher">
+            <EntityTypeMapping TypeName="Model.Teacher">
+              <MappingFragment StoreEntitySet="Teacher">
+                <ScalarProperty Name="comments" ColumnName="comments" />
+                <ScalarProperty Name="Certifications" ColumnName="Certifications" />
+                <ScalarProperty Name="Campus_would_in" ColumnName="Campus_would_in" />
+                <ScalarProperty Name="Campus_already_in" ColumnName="Campus_already_in" />
+                <ScalarProperty Name="Courses_already_teach" ColumnName="Courses_already_teach" />
+                <ScalarProperty Name="Courses_would_teach" ColumnName="Courses_would_teach" />
+                <ScalarProperty Name="Campus" ColumnName="Campus" />
+                <ScalarProperty Name="E_mail" ColumnName="E-mail" />
+                <ScalarProperty Name="Current_Promotion" ColumnName="Current_Promotion" />
+                <ScalarProperty Name="Promotion_during_validation" ColumnName="Promotion_during_validation" />
+                <ScalarProperty Name="Firstname" ColumnName="Firstname" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Questions">
+            <EntityTypeMapping TypeName="Model.Questions">
+              <MappingFragment StoreEntitySet="Questions">
+                <ScalarProperty Name="subject" ColumnName="subject" />
+                <ScalarProperty Name="Question_type" ColumnName="Question_type" />
+                <ScalarProperty Name="A" ColumnName="A" />
+                <ScalarProperty Name="Q" ColumnName="Q" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Course">
+            <EntityTypeMapping TypeName="Model.Course">
+              <MappingFragment StoreEntitySet="Course">
+                <ScalarProperty Name="Course_name" ColumnName="Course_name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Notation">
+            <EntityTypeMapping TypeName="Model.Notation">
+              <MappingFragment StoreEntitySet="Notation">
+                <ScalarProperty Name="score" ColumnName="score" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
